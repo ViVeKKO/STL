@@ -1,16 +1,29 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
+    vector <int> :: iterator j;
+void display(vector <int> y)
+{
+    for(j=y.begin();j<y.end();j++)
+    {
+        cout<<*j<<" ";
+    }
+}
 int main()
 {
     vector <int> v;
-    for(auto int i=1;i<=5;i++)
+    int i,n;
+    for(i=1;i<=5;i++)
         {
-            v.push_back(i);
+            cin>>n;
+            v.push_back(n);
         }
-    for(int i=v.begin();i!=v.end();++i)
+    for(j=v.begin();j!=v.end();++j)
         {
-            cout<<*i<<" ";
+            cout<< *j <<" ";
         }
+    sort(v.begin(),v.end());
+    display(v);
     return 0;
 }
