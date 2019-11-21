@@ -1,17 +1,16 @@
 #include <iostream> 
 #include <vector> 
-
 using namespace std; 
 	vector<int> g1; 
 
 int main() 
 { 
 	for (int i = 1; i <= 6; i++) 
-		g1.push_back(i); 
+	g1.push_back(i); 
 	cout << "Size : " << g1.size(); 
-	cout << "\nCapacity : " << g1.capacity(); 
-	cout << "\nMax_Size : " << g1.max_size(); 
-	// resizes the vector size to 4 
+	cout << "\nCapacity : " << g1.capacity();  //Gives the capacity
+	cout << "\nMax_Size : " << g1.max_size(); //Gives the max szie 
+			// resizes the vector size to 4 
 	g1.resize(4); 
 	// prints the vector size after resize() 
 	cout << "\nSize : " << g1.size(); 
